@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,200" />
+    <link rel="stylesheet" href="./Global.css">
+    <link rel="stylesheet" href="./App.styles.css">
+    
+
+    <title>To-do list</title>
+</head>
+<body>
+    <div class="App">
+        <div>
+            <header class="headerContainer">
+                <h1>Lista de Tarefas</h1>            
+            </header>
+        </div>
+        <div >
+            <main class="workBenchContainer">
+
+                <section class="taskRegisterContainer">
+                    <input id="taskInput"  class="insertTaskInput"
+                    type="text" placeholder="Insira uma tarefa" />
+                    <button id="taskButton" class="createButton">Enviar</button>
+                </section>
+              
+                    <div class="taskManagerWrapper">
+                        <section class="taskManagerBalance">
+                            <div>Tarefas criadas<a id="createdTasks">0</a></div>
+                            <div>Tarefas concluidas<a id="completeTasks">0</a></div>
+                        </section>
+                        <section class="taskManagerContainer">
+                    
+
+                        </section>
+                    </div>
+                    
+                
+                
+            </main>
+        </div>
+    </div>
+    
+    <script type="module" src="./src/controller.js"></script>
+</body>
+</html>
